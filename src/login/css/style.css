@@ -1,0 +1,101 @@
+:root {
+    --color-primario: #303F57;
+    --color-secundario: #8AA5BD;
+    --color3: #507394;
+}
+
+.container_login {
+    background-image: url(/src/assets/img/login.jpg);
+    width: 100%;
+    height: 650px;
+}
+
+.content_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    width: 330px;
+    height: 500px;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.logo_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.login_text h2 {
+    color: white;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fields label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.fields input {
+    background-color: var(--color-secundario);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+    transition: all 300ms;
+}
+
+.fields input:focus {
+   box-shadow: 0px 0px 0px 3px var(--color3);
+}
+
+.button_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button_login button {
+    background-color: var(--color3);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.sign_up {
+    margin-top: 20px;
+}
+
+.sign {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+.button_login button:hover {
+    background-color: var(--color-secundario);
+}
