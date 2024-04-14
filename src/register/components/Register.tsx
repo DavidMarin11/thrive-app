@@ -35,7 +35,7 @@ export const Register = () => {
                         <Fields nameField="Confirmar Contraseña" name="confirmar_contraseña"/>
 
                         <div className='button_register'>
-                            <button type='button'>REGISTRAR</button>
+                            <button type='submit'>REGISTRAR</button>
                         </div>
                     </form>
                 </div>

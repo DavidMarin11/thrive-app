@@ -28,7 +28,7 @@ export const Login = () => {
                     <Link to="/register" className='sign'>Crear Registro</Link>
                 </div>
                 <div className='button_login'>
-                    <button type='button'>INGRESAR</button>
+                    <button type='submit'>INGRESAR</button>
                 </div>
             </div>
         </div>
