@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.4rem
+}
+
+.navbar .nav-items {
+  display: flex;
+  column-gap: 10px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-items h4 {
+  font-size: .8rem;
+  cursor: pointer
+}
+
+.navbar .nav-items h4:hover {
+  color: #095ba8;
+  transition: 0.3s all;
+}
