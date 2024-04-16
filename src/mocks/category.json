@@ -1,6 +1,10 @@
 [
   {
-    "id": null,
-    "name": ""
+    "id": 1,
+    "name": "Cirugia"
+  },
+  {
+    "id": 2,
+    "name": "Bacteriologia"
   }
 ]

@@ -1,14 +1,34 @@
 [
   {
-    "id": null,
+    "id": 1,
+    "gender": "female",
+    "name" : "Anna",
+    "lastname": "Whesley",
+    "category_Id": 1,
+    "specialty": "Cirugia Pediatrica",
+    "img": null,
+    "rating": null
+
+  },
+  {
+    "id": 2,
+    "gender": "male",
+    "name" : "Andres",
+    "lastname": "Brand",
+    "category_Id": 2,
+    "specialty": "Bacteriologia",
+    "img": null,
+    "rating": null
+  },
+  {
+    "id": 3,
     "gender": "",
     "name" : "",
     "lastname": "",
-    "category_Id": "",
+    "category_Id": null,
     "specialty": "",
-    "img": "",
+    "img": null,
     "rating": null
-
   }
   
 
