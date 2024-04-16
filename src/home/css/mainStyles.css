@@ -1,0 +1,27 @@
+.mainHome {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+}
+
+.services {
+  display: flex;
+  margin: 0 10px;
+  column-gap: 10px;
+}
+
+.services .card {
+  border-radius: 10px;
+  width: 30vh;
+  height: 10vh;
+  background-color: #95B3CA;
+  display: flex;
+}
+
+.services .card a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

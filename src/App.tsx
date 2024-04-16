@@ -1,5 +1,5 @@
-import './App.css';
-import { RouterLogin } from './routes/RouterLogin';
+import './App.css'
+import { RouterLogin } from './routes/RouterLogin'
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
       <RouterLogin />
       {/* <Register /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

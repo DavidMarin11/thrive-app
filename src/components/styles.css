@@ -1,14 +1,22 @@
 .navbar {
   display: flex;
-  position: absolute;
+  position: relative;
   top: 0;
-  width: 100%;
-  justify-content: space-around;
+  height: 8vh;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
   align-items: center;
 }
-
-.navbar h1 {
-  font-size: 1.4rem
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px
+}
+.navbar ul li {
+  list-style: none;
+  font-size: .9rem;
+  font-weight: bold;
 }
 
 .navbar .nav-items {
@@ -17,12 +25,45 @@
   text-transform: uppercase;
 }
 
-.navbar .nav-items h4 {
+.navbar .nav-items ul li {
   font-size: .8rem;
   cursor: pointer
 }
 
-.navbar .nav-items h4:hover {
+.navbar .nav-items ul li:hover {
   color: #095ba8;
   transition: 0.3s all;
 }
+.navbar .nav-items .nav-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.navbar .nav-items .nav-btn .btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-size: .9rem;
+  letter-spacing: .65px;
+  border-radius: 7px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.navbar .nav-items .nav-btn .btn-singup {
+  color: white;
+  background-color: #303F57;
+}
+.navbar .nav-items .nav-btn .btn-singup:hover {
+  background-color: #3e4e6b
+}
+
+.navbar .nav-items .nav-btn .btn-login {
+  color: black;
+  background-color: #C9D8E5;
+}
+.navbar .nav-items .nav-btn .btn-login:hover {
+  background-color: #b7d1e8
+}
+

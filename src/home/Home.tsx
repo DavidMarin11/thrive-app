@@ -1,12 +1,15 @@
-import { Navbar } from "../components/Navbar"
+import { Navbar } from '../components/Navbar'
+import { Header } from './components/header'
+import { Main } from './components/main'
 export function Home () {
   return (
     <>
-    <Navbar />
-    <main>
-
-    </main>
+      <Navbar />
+      <main >
+        <Header />
+        <Main />
+      </main >
     </>
-    
+
   )
 }
