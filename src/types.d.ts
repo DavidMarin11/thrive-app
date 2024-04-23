@@ -1,5 +1,7 @@
 export type Doctors = Info[]
 
+export type Rol = 1 | 2
+
 export interface Info {
   id: number
   gender: gender

@@ -25,13 +25,6 @@ export function Navbar () {
              <li>Administracion</li> 
             </NavLink>
 
-            <NavLink
-            to="/services" end
-            style={{textDecoration: 'none', color: 'black'}}
-            className={({isActive}) => isActive ? "active" : ""}
-            >
-              <li>Servicios</li>
-            </NavLink>
           </ul>
         <section className='nav-btn'>
           <a href='/login' className='btn btn-login'>Iniciar Sesion</a>

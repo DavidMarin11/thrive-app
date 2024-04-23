@@ -1,5 +1,5 @@
 .header {
-  height: 45vh;
+  height: 300px;
   width: 100%;
 }
 .swiper {
@@ -57,7 +57,7 @@
   position: absolute;
   bottom: 0;
   background-size: contain;
-  height: 245px;
+  height: 235px;
   right: 8%;
 
 }

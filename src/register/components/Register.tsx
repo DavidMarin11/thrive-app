@@ -21,18 +21,18 @@ export const Register = () => {
                 </div>
                 <div className='content_form'>
                     <form action="">
-                        <Fields nameField="Nombre" name='nombre'/>
-                        <Fields nameField="Correo Electrónico" name='correo_electronico'/>
+                        <Fields nameField="Nombre" name='name'/>
+                        <Fields nameField="Correo Electrónico" name='email'/>
                         <div className='fields'>
                             <label htmlFor="">Rol</label>
                             <select name="rol" id="rol_select">
-                                <option value=""></option>
+                                <option value="">Elegir opcion</option>
                                 <option value="1">Paciente</option>
                                 <option value="2">Médico</option>
                             </select>
                         </div>
-                        <Fields nameField="Contraseña" name='contraseña'/>
-                        <Fields nameField="Confirmar Contraseña" name="confirmar_contraseña"/>
+                        <Fields nameField="Contraseña" name='password'/>
+                        <Fields nameField="Confirmar Contraseña" name="password"/>
 
                         <div className='button_register'>
                             <button type='submit'>REGISTRAR</button>
