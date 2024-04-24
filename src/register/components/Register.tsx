@@ -3,6 +3,7 @@ import '../css/style.css';
 import logo from '../../assets/logo/logo.png';
 import { Fields } from './Fields';
 
+
 export const Register = () => {
   return (
     <div className='container_register'>
@@ -20,7 +21,7 @@ export const Register = () => {
                     <h2>REGISTRASE</h2>
                 </div>
                 <div className='content_form'>
-                    <form action="">
+                    <form >
                         <Fields nameField="Nombre" name='name'/>
                         <Fields nameField="Correo Electrónico" name='email'/>
                         <div className='fields'>
@@ -32,10 +33,10 @@ export const Register = () => {
                             </select>
                         </div>
                         <Fields nameField="Contraseña" name='password'/>
-                        <Fields nameField="Confirmar Contraseña" name="password"/>
+                        <Fields nameField="Confirmar Contraseña" name='confirmedPassword' />
 
                         <div className='button_register'>
-                            <button type='submit'>REGISTRAR</button>
+                            <button type='submit' >REGISTRAR</button>
                         </div>
                     </form>
                 </div>
