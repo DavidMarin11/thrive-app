@@ -30,3 +30,40 @@
   background-color: #C9D8E5;
   transition: 0.4s all;
 }
+
+.doctors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+}
+
+.doctors .doctor {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.407) 10px 1px 20px;
+}
+
+.doctors .doctor .img {
+  display: flex;
+  padding-top: 10px;
+  width: 150px;
+  background-color: #BBD0DE;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.doctors .doctor .img img {
+  width: 80px;
+}
+
+.doctors .doctor .info {
+  padding: 10px;
+  text-align: center;
+}
+
+.doctors .doctor .text {
+  margin: 8px 5px;
+}
+
+
