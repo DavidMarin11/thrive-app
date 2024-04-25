@@ -1,10 +1,29 @@
 
 import '../css/style.css';
 import logo from '../../assets/logo/logo.png';
-import { Fields } from './Fields';
-
+import { useState } from 'react';
 
 export const Register = () => {
+
+    const [passwordVa, setPasswordVa] = useState<String>('');
+
+    const authRegister = (e: any) => {
+        e.preventDefault();
+      
+        let data = e.target;
+      
+        const registerUser = {
+          name: data.name.value,
+          email: data.email.value,
+          rol: data.rol.value,
+          password: data.password.value,
+          confirmedPassword: data.confirmedPassword.value
+        }
+        console.log(registerUser);
+        let password = data.password.value;
+        let confirmedPassword = data.confirmedPassword.value;
+    }
+
   return (
     <div className='container_register'>
         <div className='content_card'>
@@ -21,9 +40,15 @@ export const Register = () => {
                     <h2>REGISTRASE</h2>
                 </div>
                 <div className='content_form'>
-                    <form >
-                        <Fields nameField="Nombre" name='name'/>
-                        <Fields nameField="Correo Electrónico" name='email'/>
+                    <form onSubmit={authRegister}>
+                        <div className='fields'>
+                            <label htmlFor="">Nombre</label>
+                            <input  type="text" name="name" required/>
+                        </div>
+                        <div className='fields'>
+                            <label htmlFor="">Correo Electrónico</label>
+                            <input  type="text" name="email" required/>
+                        </div>
                         <div className='fields'>
                             <label htmlFor="">Rol</label>
                             <select name="rol" id="rol_select">
@@ -32,9 +57,14 @@ export const Register = () => {
                                 <option value="2">Médico</option>
                             </select>
                         </div>
-                        <Fields nameField="Contraseña" name='password'/>
-                        <Fields nameField="Confirmar Contraseña" name='confirmedPassword' />
-
+                        <div className='fields'>
+                            <label htmlFor="">Contraseña</label>
+                            <input  type="password" name="password" required/>
+                        </div>
+                        <div className='fields'>
+                            <label htmlFor="">Confirmar Contraseña</label>
+                            <input  type="password" name="confirmedPassword" required/>
+                        </div>
                         <div className='button_register'>
                             <button type='submit' >REGISTRAR</button>
                         </div>
