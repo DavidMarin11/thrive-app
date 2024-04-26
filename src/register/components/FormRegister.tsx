@@ -35,7 +35,7 @@ export const FormRegister = () => {
     if (bandera) {
         localStorage.setItem('users', JSON.stringify(arrayUser));
     } else {
-        const mySwal = Swal.fire<SweetAlertResult<any>>({
+        Swal.fire<SweetAlertResult<any>>({
             title: 'El correo ya se encuentra registrado.',
             text: data.email,
             icon: 'warning', 
