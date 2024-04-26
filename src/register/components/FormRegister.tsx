@@ -1,5 +1,6 @@
 
-import { useForm, FieldError } from 'react-hook-form';
+import { useForm} from 'react-hook-form';
+import Swal, { SweetAlertResult } from 'sweetalert2'
 
 interface User {
     name: string,
@@ -20,7 +21,6 @@ export const FormRegister = () => {
 
     if (users != null && users != '') {
         arrayUser = JSON.parse(users);
-
         for (let i = 0; i < arrayUser.length; i++) {
             if (data.email === arrayUser[i]['email']) {
                 bandera = false;
@@ -34,8 +34,13 @@ export const FormRegister = () => {
 
     if (bandera) {
         localStorage.setItem('users', JSON.stringify(arrayUser));
+    } else {
+        const mySwal = Swal.fire<SweetAlertResult<any>>({
+            title: 'El correo ya se encuentra registrado.',
+            text: data.email,
+            icon: 'warning', 
+          });
     }
-// console.log(arrayUser);
   }) 
 
   return (
