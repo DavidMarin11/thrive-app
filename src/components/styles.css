@@ -83,3 +83,18 @@
   background-color: #b7d1e8
 }
 
+.user_login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout {
+  margin-top: 25px;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.logout_link {
+  color: #3e4e6b;
+}
+

@@ -1,6 +1,6 @@
 
 import { useForm} from 'react-hook-form';
-import Swal, { SweetAlertResult } from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 interface User {
     name: string,
@@ -35,10 +35,11 @@ export const FormRegister = () => {
     if (bandera) {
         localStorage.setItem('users', JSON.stringify(arrayUser));
     } else {
-        Swal.fire<SweetAlertResult<any>>({
+        Swal.fire({
             title: 'El correo ya se encuentra registrado.',
             text: data.email,
-            icon: 'warning', 
+            icon: 'warning',
+            confirmButtonColor: '#8AA5BD'
           });
     }
   }) 

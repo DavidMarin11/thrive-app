@@ -1,8 +1,9 @@
 
 import '../css/style.css'
 import logo from '../../assets/logo/logo.png';
-import { Fields } from '../../register/components/Fields';
+// import { Fields } from '../../register/components/FormRegister';
 import { Link } from 'react-router-dom';
+import { FormLogin } from './FormLogin';
 
 export const Login = () => {
   return (
@@ -21,14 +22,10 @@ export const Login = () => {
                     <h2>INICIAR SESIÓN</h2>
                 </div>
                 <div>
-                    <Fields nameField='Correo Electrónico'  name='correo_electronico'/>
-                    <Fields nameField='Contraseña'  name='contraseña'/>
+                    <FormLogin />
                 </div>
                 <div className='sign_up'>
                     <Link to="/register" className='sign'>Crear Registro</Link>
-                </div>
-                <div className='button_login'>
-                    <button type='submit'>INGRESAR</button>
                 </div>
             </div>
         </div>
