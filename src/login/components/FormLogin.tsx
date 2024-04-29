@@ -37,6 +37,12 @@ export const FormLogin = () => {
                     confirmButtonColor: '#8AA5BD'
                   });
             }
+        } else {
+            Swal.fire({
+                title: `El usuario con correo electrónico ${data.email} ingresado no existe.`,
+                icon: 'warning',
+                confirmButtonColor: '#8AA5BD'
+              });
         }
       }) 
   return (

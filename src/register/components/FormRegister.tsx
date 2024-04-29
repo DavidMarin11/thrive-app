@@ -1,5 +1,6 @@
 
 import { useForm} from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
 interface User {
@@ -13,6 +14,7 @@ interface User {
 export const FormRegister = () => {
 
   const { handleSubmit , register, watch, formState: { errors }} = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = handleSubmit((data) => {
     let arrayUser = [];
@@ -34,13 +36,20 @@ export const FormRegister = () => {
 
     if (bandera) {
         localStorage.setItem('users', JSON.stringify(arrayUser));
+        Swal.fire({
+            title: 'Registro creado correctamente',
+            text: 'Registro creado correctamente',
+            icon: 'success',
+            showConfirmButton: false
+        });
+        navigate('/login');
     } else {
         Swal.fire({
             title: 'El correo ya se encuentra registrado.',
             text: data.email,
             icon: 'warning',
             confirmButtonColor: '#8AA5BD'
-          });
+        });
     }
   }) 
 

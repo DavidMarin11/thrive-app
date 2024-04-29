@@ -9,7 +9,6 @@ export const Logout = ({ name }: User) => {
     const logout = () => {
         localStorage.removeItem('login_user');
     }
-
   return (
     <div className='user_login'>
         <div>
