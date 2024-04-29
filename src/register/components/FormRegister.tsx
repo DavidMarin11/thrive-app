@@ -3,14 +3,6 @@ import { useForm} from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
-interface User {
-    name: string,
-    email: string,
-    rol: string,
-    password : string,
-    confirmedPassword: string
-}
-
 export const FormRegister = () => {
 
   const { handleSubmit , register, watch, formState: { errors }} = useForm();
@@ -37,7 +29,7 @@ export const FormRegister = () => {
     if (bandera) {
         localStorage.setItem('users', JSON.stringify(arrayUser));
         Swal.fire({
-            title: 'Registro creado correctamente',
+            title: 'Guardado',
             text: 'Registro creado correctamente',
             icon: 'success',
             showConfirmButton: false
