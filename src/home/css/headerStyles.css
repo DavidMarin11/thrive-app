@@ -30,7 +30,11 @@
   width: 85%;
   border-radius: 10px;
   justify-content: center;
+  cursor: pointer;
+}
 
+.swiper-slide .info:hover {
+  background-color: #303f57f2;
 }
 
 .info h3 {

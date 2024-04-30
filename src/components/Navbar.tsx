@@ -20,7 +20,7 @@ export function Navbar () {
             </NavLink>
 
             <NavLink
-            to="/register"
+            to="/administracion"
             style={{textDecoration: 'none', color: 'black'}}
             className={({isActive}) => isActive ? "active" : ""}
             >

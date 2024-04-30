@@ -92,9 +92,12 @@
   margin-top: 25px;
   font-size: 10px;
   margin-left: 10px;
+  align-items: center;
 }
 
 .logout_link {
   color: #3e4e6b;
+  text-decoration: none;
+  font-weight: 400;
 }
 

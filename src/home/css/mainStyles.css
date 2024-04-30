@@ -42,6 +42,12 @@
   border-radius: 10px;
   width: 450px;
   box-shadow: rgba(0, 0, 0, 0.407) 10px 1px 20px;
+  cursor: pointer;
+}
+
+.doctors .doctor:hover {
+  background-color: #c9d8e599;
+  transition: 0.4s all;
 }
 
 .doctors .doctor .img {
